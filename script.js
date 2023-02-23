@@ -97,4 +97,41 @@ function submitQ7() {
   }
 }
 
+// Lab 04
+
+let ansYN1 = "yes"
+
+function submitYN1() {
+  let userAns3 = document.getElementById("yn1").value;
+  if (userAns3 == ansYN1) {
+    alert(`Thats right!`); 
+  }
+  else if (userAns3 == "no") {
+    alert(`Try again.`)
+  }
+}
+
+let ansYN2 = "no"
+
+function submitYN2() {
+  let userAns3 = document.getElementById("yn2").value;
+  if (userAns3 == ansYN2) {
+    alert(`Thats right!`); 
+  }
+  else if (userAns3 == "yes") {
+    alert(`Try again.`)
+  }
+}
+
+let ansYN3 = "no"
+
+function submitYN3() {
+  let userAns3 = document.getElementById("yn3").value;
+  if (userAns3 == ansYN3) {
+    alert(`Thats right!`); 
+  }
+  else if (userAns3 == "yes") {
+    alert(`Try again.`)
+  }
+}
 
