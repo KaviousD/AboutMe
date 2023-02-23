@@ -4,21 +4,85 @@ let name = prompt("Stop! You've violated the law! It's been too long since I've 
 alert(`Welcome to the site, rebel ${name}. The bots will be watching you...`);
 
 function submitQuiz() {
-    const q1 = document.getElementById("q1").value;
-    const q2 = document.getElementById("q2").value;
-    const q3 = document.getElementById("q3").value;
-    const q4 = document.getElementById("q4").value;
-    const q5 = document.getElementById("q5").value;
-  
-    const answers = ["Kaydee Kelly", "July", "Yes", "Character Design", "Creative Writing"];
-    const userAnswers = [q1, q2, q3, q4, q5];
-    
-    let score = 0;
-    for (let i = 0; i < answers.length; i++) {
-      if (userAnswers[i].toLowerCase() === answers[i].toLowerCase()) {
-        score++;
-      }
+  const q1 = document.getElementById("q1").value;
+  const q2 = document.getElementById("q2").value;
+  const q3 = document.getElementById("q3").value;
+  const q4 = document.getElementById("q4").value;
+  const q5 = document.getElementById("q5").value;
+
+  const answers = ["Kaydee Kelly", "July", "Yes", "Character Design", "Creative Writing"];
+  const userAnswers = [q1, q2, q3, q4, q5];
+
+  let score = 0;
+  for (let i = 0; i < answers.length; i++) {
+    if (userAnswers[i].toLowerCase() === answers[i].toLowerCase()) {
+      score++;
     }
-  
-    alert(`You got ${score} out of 5 questions correct!`);
   }
+
+  alert(`You got ${score} out of 5 questions correct!`);
+}
+
+// Below is for lab 3 Q6
+
+let correctAnswer = "6"
+
+function submitQ6() {
+  const userAns = document.getElementById("q6").value;
+  if (userAns > correctAnswer) {
+    alert(`Number is too high! Try again.`);
+  }
+  if (userAns < correctAnswer) {
+    alert(`Number is too low! Try again.`);
+  }
+  if (userAns = correctAnswer) {
+    alert(`You guessed right!`)
+  }
+}
+
+// Below is for lab 3 Q7
+function checkUA(userinput, correctanwsers) {
+  let userWC = false;
+  let x = 0;
+  while (x < correctanwsers.length) {
+    if (correctanwsers[x] == userinput) {
+      userWC = true
+    }
+    x += 1
+  }
+  if (userWC == true) {
+    return true
+  }
+  if (userWC == false) {
+    return false
+  }
+
+}
+
+
+let userAns2 = "";
+let correctAnswer2 = ["arylic", "oil", "digital", "watercolor"];
+let retry = 6
+function submitQ7() {
+
+  if (retry > 0) {
+
+
+    let userAns2 = document.getElementById("q7").value;
+    let userWC = checkUA(userAns2, correctAnswer2)
+
+    if (userWC == true) {
+      alert("yay")
+    }
+    if (userWC == false) {
+      alert("nope")
+    }
+
+    retry -= 1
+  }
+  else {
+    alert(`You're out of tries.`)
+  }
+}
+
+
