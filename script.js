@@ -45,10 +45,10 @@ function submitQ6() {
   if (userAns > correctAnswer) {
     alert(`Number is too high!`);
   }
-  if (userAns < correctAnswer) {
+  else if (userAns < correctAnswer) {
     alert(`Number is too low!`)
   }
-  if (userAns = correctAnswer)
+  else if (userAns = correctAnswer)
   alert(`You guessed right!`)
 }
 
