@@ -27,17 +27,29 @@ function submitQuiz() {
 
 let correctAnswer = "6"
 
+// function submitQ6() {
+//   const userAns = document.getElementById("q6").value;
+//   if (userAns > correctAnswer) {
+//     alert(`Number is too high! Try again.`);
+//   }
+//   if (userAns < correctAnswer) {
+//     alert(`Number is too low! Try again.`);
+//   }
+//   if (userAns = correctAnswer) {
+//     alert(`You guessed right!`)
+//   }
+// }
+
 function submitQ6() {
-  const userAns = document.getElementById("q6").value;
+  let userAns = document.getElementById("q6").value;
   if (userAns > correctAnswer) {
-    alert(`Number is too high! Try again.`);
+    alert(`Number is too high!`);
   }
   if (userAns < correctAnswer) {
-    alert(`Number is too low! Try again.`);
+    alert(`Number is too low!`)
   }
-  if (userAns = correctAnswer) {
-    alert(`You guessed right!`)
-  }
+  if (userAns = correctAnswer)
+  alert(`You guessed right!`)
 }
 
 // Below is for lab 3 Q7
