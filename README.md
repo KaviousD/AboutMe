@@ -2,7 +2,7 @@
 
 ![performance-img](https://cdn.discordapp.com/attachments/442113342501552147/1079952486519029781/image.png) 
 
-Added 2 - 27 - 2023
+Peformance Updated: 2 - 27 - 2023
 
 **Information:**
 
