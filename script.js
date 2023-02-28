@@ -23,22 +23,7 @@ function submitQuiz() {
   alert(`You got ${score} out of 5 questions correct!`);
 }
 
-// Below is for lab 3 Q6
-
 let correctAnswer = "6"
-
-// function submitQ6() {
-//   const userAns = document.getElementById("q6").value;
-//   if (userAns > correctAnswer) {
-//     alert(`Number is too high! Try again.`);
-//   }
-//   if (userAns < correctAnswer) {
-//     alert(`Number is too low! Try again.`);
-//   }
-//   if (userAns = correctAnswer) {
-//     alert(`You guessed right!`)
-//   }
-// }
 
 function submitQ6() {
   let userAns = document.getElementById("q6").value;
@@ -52,7 +37,7 @@ function submitQ6() {
   alert(`You guessed right!`)
 }
 
-// Below is for lab 3 Q7
+
 function checkUA(userinput, correctanwsers) {
   let userWC = false;
   let x = 0;
@@ -97,7 +82,7 @@ function submitQ7() {
   }
 }
 
-// Lab 04
+
 
 let ansYN1 = "yes"
 
