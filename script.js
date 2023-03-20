@@ -5,40 +5,40 @@ alert(`Welcome to the site, rebel ${name}. The bots will be watching you...`);
 
 
 function ynQuiz() {
-let ynAnswer1 = prompt ("Was this coder born in 1998?").toLocaleLowerCase();
-if (ynAnswer1 === "yes"){
-  alert("Correct");
-} else {
-  alert ("Incorrect. Try again.");
-}
+  let ynAnswer1 = prompt("Was this coder born in 1998?").toLocaleLowerCase();
+  if (ynAnswer1 === "yes") {
+    alert("Correct");
+  } else {
+    alert("Incorrect. Try again.");
+  }
 
-let ynAnswer2 = prompt ("Is this coder is a freelance artist?").toLocaleLowerCase();
-if (ynAnswer2 === "yes"){
-  alert("Correct");
-} else {
-  alert ("Incorrect. Try again.");
-}
+  let ynAnswer2 = prompt("Is this coder is a freelance artist?").toLocaleLowerCase();
+  if (ynAnswer2 === "yes") {
+    alert("Correct");
+  } else {
+    alert("Incorrect. Try again.");
+  }
 
-let ynAnswer3 = prompt ("Does this coder like to story-writing roleplay?").toLocaleLowerCase();
-if (ynAnswer3 === "yes"){
-  alert("Correct");
-} else {
-  alert ("Incorrect. Try again.");
-}
+  let ynAnswer3 = prompt("Does this coder like to story-writing roleplay?").toLocaleLowerCase();
+  if (ynAnswer3 === "yes") {
+    alert("Correct");
+  } else {
+    alert("Incorrect. Try again.");
+  }
 
-let ynAnswer4 = prompt ("Does this coder want to be a broadway writer?").toLocaleLowerCase();
-if (ynAnswer4 === "no"){
-  alert("Correct");
-} else {
-  alert ("Incorrect. Try again.");
-}
+  let ynAnswer4 = prompt("Does this coder want to be a broadway writer?").toLocaleLowerCase();
+  if (ynAnswer4 === "no") {
+    alert("Correct");
+  } else {
+    alert("Incorrect. Try again.");
+  }
 
-let ynAnswer5 = prompt ("Did this coder go to college for cullinary?").toLocaleLowerCase();
-if (ynAnswer5 === "no"){
-  alert("Correct");
-} else {
-  alert ("Incorrect. Try again.");
-}
+  let ynAnswer5 = prompt("Did this coder go to college for cullinary?").toLocaleLowerCase();
+  if (ynAnswer5 === "no") {
+    alert("Correct");
+  } else {
+    alert("Incorrect. Try again.");
+  }
 
 }
 
@@ -74,7 +74,7 @@ function submitQ6() {
     alert(`Number is too low!`)
   }
   else if (userAns = correctAnswer)
-  alert(`You guessed right!`)
+    alert(`You guessed right!`)
 }
 
 
@@ -129,7 +129,7 @@ let ansYN1 = "yes"
 function submitYN1() {
   let userAns3 = document.getElementById("yn1").value;
   if (userAns3 == ansYN1) {
-    alert(`Thats right!`); 
+    alert(`Thats right!`);
   }
   else if (userAns3 == "no") {
     alert(`Try again.`)
@@ -141,7 +141,7 @@ let ansYN2 = "no"
 function submitYN2() {
   let userAns3 = document.getElementById("yn2").value;
   if (userAns3 == ansYN2) {
-    alert(`Thats right!`); 
+    alert(`Thats right!`);
   }
   else if (userAns3 == "yes") {
     alert(`Try again.`)
@@ -153,7 +153,7 @@ let ansYN3 = "no"
 function submitYN3() {
   let userAns3 = document.getElementById("yn3").value;
   if (userAns3 == ansYN3) {
-    alert(`Thats right!`); 
+    alert(`Thats right!`);
   }
   else if (userAns3 == "yes") {
     alert(`Try again.`)
