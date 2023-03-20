@@ -1,7 +1,47 @@
-"use strict";
++"use strict";
 
 let name = prompt("Stop! You've violated the law! It's been too long since I've seen a good brawl! I'm just warming up, you pathetic worm! HURRR! REMEMBER THE EMPEROR! I suppose I can let you in.. What is your name?");
 alert(`Welcome to the site, rebel ${name}. The bots will be watching you...`);
+
+
+function ynQuiz() {
+let ynAnswer1 = prompt ("Was this coder born in 1998?").toLocaleLowerCase();
+if (ynAnswer1 === "yes"){
+  alert("Correct");
+} else {
+  alert ("Incorrect. Try again.");
+}
+
+let ynAnswer2 = prompt ("Is this coder is a freelance artist?").toLocaleLowerCase();
+if (ynAnswer2 === "yes"){
+  alert("Correct");
+} else {
+  alert ("Incorrect. Try again.");
+}
+
+let ynAnswer3 = prompt ("Does this coder like to story-writing roleplay?").toLocaleLowerCase();
+if (ynAnswer3 === "yes"){
+  alert("Correct");
+} else {
+  alert ("Incorrect. Try again.");
+}
+
+let ynAnswer4 = prompt ("Does this coder want to be a broadway writer?").toLocaleLowerCase();
+if (ynAnswer4 === "no"){
+  alert("Correct");
+} else {
+  alert ("Incorrect. Try again.");
+}
+
+let ynAnswer5 = prompt ("Did this coder go to college for cullinary?").toLocaleLowerCase();
+if (ynAnswer5 === "no"){
+  alert("Correct");
+} else {
+  alert ("Incorrect. Try again.");
+}
+
+}
+
 
 function submitQuiz() {
   const q1 = document.getElementById("q1").value;
