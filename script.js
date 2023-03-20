@@ -1,4 +1,4 @@
-+"use strict";
+"use strict";
 
 let name = prompt("Stop! You've violated the law! It's been too long since I've seen a good brawl! I'm just warming up, you pathetic worm! HURRR! REMEMBER THE EMPEROR! I suppose I can let you in.. What is your name?");
 alert(`Welcome to the site, rebel ${name}. The bots will be watching you...`);
