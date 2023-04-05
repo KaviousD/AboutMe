@@ -1,300 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
 
     <style>
-        body {
-            background-image: url("https://wallpaper.dog/large/5461314.jpg");
-            background-size: 100%;
-        }
+      body {
+        background-image: url("https://wallpaper.dog/large/5461314.jpg");
+        background-size: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      .intro-title {
+        display: flex;
+        justify-content: center;
+      }
 
-        .intro-title {
-            display: flex;
-            justify-content: center;
-        }
+      .upper-info {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 0px 20px 0px;
+      }
 
-        .upper-info {
-            display: flex;
-            flex-direction: row;
-            padding: 0px 0px 20px 0px;
-        }
+      .left-upper-info-box {
+        display: flex;
+        padding: 0px 0px 0px 0px;
+      }
 
-        .left-upper-info-box {
-            display: flex;
-            padding: 0px 0px 0px 0px;
-        }
+      .right-upper-info-box {
+        display: flex;
+        padding: 0px 0px 0px 0px;
+      }
 
-        .right-upper-info-box {
-            display: flex;
-            padding: 0px 0px 0px 0px;
-        }
+      .pop-quiz {
+        display: flex;
+        justify-content: space-evenly;
+        border: 2px solid black;
+        padding: 5px;
+        width: 300px;
+      }
 
-        .pop-quiz {
-            display: flex;
-            justify-content: space-evenly;
-            border: 2px solid black;
-            padding: 5px;
-            width: 300px;
-        }
+      .num-quiz {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: 2px solid black;
+        padding: 5px;
+        width: 300px;
+      }
 
-        .num-quiz {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            border: 2px solid black;
-            padding: 5px;
-            width: 300px;
-        }
+      .numQuiz-name {
+        display: flex;
+        justify-content: center;
+      }
 
-        .numQuiz-name {
-            display: flex;
-            justify-content: center;
-        }
+      .pop-name {
+        display: flex;
+        justify-content: center;
+      }
 
-        .pop-name {
-            display: flex;
-            justify-content: center;
-        }
+      .bio-words {
+        display: flex;
+        flex-direction: row;
+        font-size: medium;
+        padding: 50px 50px 50 50px;
+        border: 4px;
+        overflow: auto;
+        max-width: 700px;
+        padding: 0px 50px 0px 50px;
+      }
 
-        .bio-words {
-            display: flex;
-            flex-direction: row;
-            font-size: medium;
-            padding: 50px 50px 50 50px;
-            border: 4px;
-            overflow: auto;
-            max-width: 700px;
-            padding: 0px 50px 0px 50px;
-        }
+      .intro-sum {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 500px 0px 0px;
+      }
 
-        .intro-sum {
-            display: flex;
-            flex-direction: row;
-            padding: 0px 500px 0px 0px;
-        }
+      img {
+        border-radius: 50%;
+        border: 05px solid black;
+      }
 
-        img {
-            border-radius: 50%;
-            border: 05px solid black;
-        }
+      .mini-bio {
+        padding: 0px 0px 0px 56px;
+        font-size: large;
+      }
 
-        .mini-bio {
-            padding: 0px 0px 0px 56px;
-            font-size: large;
-        }
+      .center-page {
+        display: flex;
+        align-items: center;
+        padding: 0px 0px 0px 150px;
+      }
 
-        .center-page {
-            display: flex;
-            align-items: center;
-            padding: 0px 0px 0px 150px;
-        }
+      .main-column {
+        display: flex;
+        flex-direction: column;
+      }
 
-        .main-column {
-            display: flex;
-            flex-direction: column;
-        }
+      .lab-03-sec {
+        display: flex;
+        padding: 0px 150px 0px 0px;
+      }
 
-        .lab-03-sec {
-            display: flex;
-            padding: 0px 150px 0px 0px;
-        }
+      .education-section {
+        padding: 0px 50px 0px 0px;
+      }
 
-        .education-section {
-            padding: 0px 50px 0px 0px;
-        }
+      .work-section {
+        padding-inline-start: 0px 100px 0px 0px;
+      }
 
-        .work-section {
-            padding-inline-start: 0px 100px 0px 0px;
-        }
+      .moveYnQuiz {
+        margin-left: 50px;
+      }
     </style>
     <script src="script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="main-column">
-        <div class="center-page">
-            <div>
-                <div class="intro-title">
-                    <h1>About the Coder</h1>
+      <div class="center-page">
+        <div>
+          <div class="intro-title">
+            <h1>About the Coder</h1>
+          </div>
+
+          <div class="upper-info">
+            <div class="left-upper-info-box">
+              <div class="intro-summ">
+                <div class="pfp-img">
+                  <img
+                    src="https://cdn.discordapp.com/attachments/442113342501552147/1077783913017122878/IMG_4898.jpg"
+                    width="200px"
+                    height="200px"
+                  />
                 </div>
-
-                <div class="upper-info">
-                    <div class="left-upper-info-box">
-                        <div class="intro-summ">
-                            <div class="pfp-img">
-                                <img src="https://cdn.discordapp.com/attachments/442113342501552147/1077783913017122878/IMG_4898.jpg"
-                                    width="200px" height="200px">
-                            </div>
-                            <div class="intro-sum-name">
-                                <h2>Kaydee Kelly</h2>
-                            </div>
-                            <div class="info-titles">
-                                <p> <strong>Birthday:</strong> July 15<sup>th</sup> 1998</p>
-                                <p> <strong>Age:</strong> 24</p>
-                                <p> <strong>Current Career:</strong> Freelance Illistration Artist</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="right-upper-info-box">
-                        <div class="intro-summ">
-                            <div class="pfp-img">
-
-                            </div>
-                            <div class="intro-sum-name">
-                                <div class="biography">
-                                    <h4 class="mini-bio">Brief Biography</h4>
-                                    <p class="bio-words">Hello, my name is Kaydee Kelly. I am 24 years old and I was
-                                        born on July 15th 1998.
-                                        I graduated highschool in 2017 with honors in arts. I attended Southwest
-                                        Tennesee Community from 2017
-                                        to 2019, but due to covid I didn't graduate. I'm currently attending code school
-                                        through the Collective
-                                        Blueprint and Code School to become a web developer. While I enjoy coding and
-                                        web development, character
-                                        design is my true passion. In my free time I work on my creative writing skills.
-                                        With all of these skills
-                                        combined, I aspire to become a solo indie RPG game developer.</p>
-
-                                    <p class="bio-words">
-                                        I currently work as a freelance character concept artist as well as an event
-                                        manager for
-                                        the Art Coven, a small collective of novice to intermetdiate artists who uplift
-                                        small fan and
-                                        roleplay communties by delivering quality character art. In addition to a
-                                        creative career choice,
-                                        I am currently an aspiring streamer and author.
-                                    </p>
-
-                                    <p class="bio-words">
-                                        My pleasure is work and work is my pleasure. Most of my free time has its
-                                        wires crossed into my work. I enjoy art, writing, and roleplay. I'm not a large
-                                        fan of uncreative
-                                        hobbies, with the exception of competitive gaming.
-                                    </p>
-                                    <button onclick="ynQuiz()">Take a quick Yes & No quiz!</button>
-                                </div>
-
-
-                                <div class="center-page">
-                                    <div class="lab-03-sec">
-                                        <div class="education-section">
-                                            <h3 class="edu-title">Education</h3>
-                                            <li> Code School</li>
-                                            <ul> 2023-2023 On Going</ul>
-                                            <li> Southwest Tennessee Community College</li>
-                                            <ul> 2017-2019 Unfinished</ul>
-                                            <li> Millington Central Highschool</li>
-                                            <ul> 2017 - Diploma</ul>
-
-                                        </div>
-
-
-                                        <div class="education-section">
-                                            <h3 class="edu-title">Work Experience</h3>
-                                            <li> Event Manager</li>
-                                            <ul> 2020-2023</ul>
-                                            <li> Concept Artist</li>
-                                            <ul> 2020-2023</ul>
-                                            <li> Cashier</li>
-                                            <ul> 2020-2022</ul>
-                                            <li> Chief-in-Editor</li>
-                                            <ul> 2016-2017</ul>
-                                        </div>
-
-                                        <div class="work-section">
-                                            <h3 class="tt-title">Top 10 Songs to Draw To</h3>
-                                            <ol>
-                                                <li><a href="https://www.youtube.com/watch?v=lKSXTA900zQ">Don’t Freak
-                                                        Out</a></li>
-                                                <li><a href="https://www.youtube.com/watch?v=7DtAZ4GmtkA">Fish in a
-                                                        Birdcage</a></li>
-                                                <li><a href="https://www.youtube.com/watch?v=hL9eq-TVwyk">9 1 1 </a>
-                                                </li>
-                                                <li><a href="https://www.youtube.com/watch?v=wzX0tx1KSjg">God-ish</a>
-                                                </li>
-                                                <li><a href="https://www.youtube.com/watch?v=k5mX3NkA7jM">Mary on a
-                                                        Cross</a></li>
-                                                <li><a href="https://www.youtube.com/watch?v=0lBNlD29hnw">Rhythm
-                                                        Kitchen</a></li>
-                                                <li><a href="https://www.youtube.com/watch?v=JZWnMFhT7E8">Yandere</a>
-                                                </li>
-                                                <li><a href="https://www.youtube.com/watch?v=ZtCOsQqrBrs">Spit in my
-                                                        Face</a></li>
-                                                <li><a href="https://www.youtube.com/watch?v=HaXCOFYW2G0">Fly n
-                                                        Ghetto</a></li>
-                                                <li><a href="https://www.youtube.com/watch?v=yAWo0DV03Ng">Animals</a>
-                                                </li>
-                                            </ol>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
+                <div class="intro-sum-name">
+                  <h2>Kaydee Kelly</h2>
                 </div>
+                <div class="info-titles">
+                  <p><strong>Birthday:</strong> July 15<sup>th</sup> 1998</p>
+                  <p><strong>Age:</strong> 24</p>
+                  <p>
+                    <strong>Current Career:</strong> Freelance Illistration
+                    Artist
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <div class="pop-quiz">
-                <div name="POP_QUIZ">
-                    <h2 class="pop-name">Pop Quiz</h2>
-                    <ol>What is the name of the coder of this site?</ol>
-                    <ol> <input type="text" id="q1">
-                    </ol>
+            <div class="right-upper-info-box">
+              <div class="intro-summ">
+                <div class="pfp-img"></div>
+                <div class="intro-sum-name">
+                  <div class="biography">
+                    <h4 class="mini-bio"><u>Brief Biography</u></h4>
+                    <p class="bio-words">
+                      Hello, my name is Kaydee Kelly. I am 24 years old and I
+                      was born on July 15th 1998. I graduated highschool in 2017
+                      with honors in arts. I attended Southwest Tennesee
+                      Community from 2017 to 2019, but due to covid I didn't
+                      graduate. I'm currently attending code school through the
+                      Collective Blueprint and Code School to become a web
+                      developer. While I enjoy coding and web development,
+                      character design is my true passion. In my free time I
+                      work on my creative writing skills. With all of these
+                      skills combined, I aspire to become a solo indie RPG game
+                      developer.
+                    </p>
 
-                    <ol>What month was the coder born?</ol>
-                    <ol> <input type="text" id="q2">
-                    </ol>
+                    <p class="bio-words">
+                      I currently work as a freelance character concept artist
+                      as well as an event manager for the Art Coven, a small
+                      collective of novice to intermetdiate artists who uplift
+                      small fan and roleplay communties by delivering quality
+                      character art. In addition to a creative career choice, I
+                      am currently an aspiring streamer and author.
+                    </p>
 
-                    <ol>Did the coder graduate high school?</ol>
-                    <ol> <input type="text" id="q3">
-                    </ol>
+                    <p class="bio-words">
+                      My pleasure is work and work is my pleasure. Most of my
+                      free time has its wires crossed into my work. I enjoy art,
+                      writing, and roleplay. I'm not a large fan of uncreative
+                      hobbies, with the exception of competitive gaming.
+                    </p>
+                    <div class="moveYnQuiz">
+                      <button onclick="ynQuiz()">
+                        Take a quick Yes & No quiz!
+                      </button>
+                    </div>
+                  </div>
 
-                    <ol>What is this coder's passion?</ol>
-                    <ol> <input type="text" id="q4">
-                    </ol>
+                  <div class="center-page">
+                    <div class="lab-03-sec">
+                      <div class="education-section">
+                        <h3 class="edu-title"><u>Education</u></h3>
+                        <li>Code School</li>
+                        <ul>
+                          2023-2023 On Going
+                        </ul>
+                        <li>Southwest Tennessee Community College</li>
+                        <ul>
+                          2017-2019 Unfinished
+                        </ul>
+                        <li>Millington Central Highschool</li>
+                        <ul>
+                          2017 - Diploma
+                        </ul>
+                      </div>
 
-                    <ol>What does this coder do on their free time?</ol>
-                    <ol> <input type="text" id="q5">
-                    </ol>
+                      <div class="education-section">
+                        <h3 class="edu-title"><u>Work Experience</u></h3>
+                        <li>Event Manager</li>
+                        <ul>
+                          2020-2023
+                        </ul>
+                        <li>Concept Artist</li>
+                        <ul>
+                          2020-2023
+                        </ul>
+                        <li>Cashier</li>
+                        <ul>
+                          2020-2022
+                        </ul>
+                        <li>Chief-in-Editor</li>
+                        <ul>
+                          2016-2017
+                        </ul>
+                      </div>
 
-                    <ol><button onclick="submitQuiz()">Submit</button></ol>
-
-                    <h2 class="numQuiz-name">Fun Quiz</h2>
-                    <ol>What's my lucky number?</ol>
-                    <ol> <input type="text" id="q6">
-                        <ol><button onclick="submitQ6()">Submit</button></ol>
-                    </ol>
-                    <ol>Name an art medium.</ol>
-                    <ol> <input type="text" id="q7">
-                        <ol><button onclick="submitQ7()">Submit</button></ol>
-                    </ol>
-                    <ol>Is this user zodiac sign Cancer?</ol>
-                    <ol> <input type="text" id="yn1">
-                        <ol><button onclick="submitYN1()">Submit</button></ol>
-                    </ol>
-                    <ol>Did this coder finish Code School yet?</ol>
-                    <ol> <input type="text" id="yn2">
-                        <ol><button onclick="submitYN2()">Submit</button></ol>
-                    </ol>
-                    <ol>Did this coder finish college?</ol>
-                    <ol> <input type="text" id="yn3">
-                        <ol><button onclick="submitYN3()">Submit</button></ol>
-                    </ol>
-
+                      <div class="work-section">
+                        <h3 class="tt-title"><u>Top 10 Songs to Draw To</u></h3>
+                        <ol>
+                          <li>
+                            <a
+                              href="https://www.youtube.com/watch?v=lKSXTA900zQ"
+                              >Don’t Freak Out</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.youtube.com/watch?v=7DtAZ4GmtkA"
+                              >Fish in a Birdcage</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.youtube.com/watch?v=hL9eq-TVwyk"
+                              >9 1 1
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.youtube.com/watch?v=wzX0tx1KSjg"
+                              >God-ish</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.youtube.com/watch?v=k5mX3NkA7jM"
+                              >Mary on a Cross</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.youtube.com/watch?v=0lBNlD29hnw"
+                              >Rhythm Kitchen</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.youtube.com/watch?v=JZWnMFhT7E8"
+                              >Yandere</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.youtube.com/watch?v=ZtCOsQqrBrs"
+                              >Spit in my Face</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.youtube.com/watch?v=HaXCOFYW2G0"
+                              >Fly n Ghetto</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.youtube.com/watch?v=yAWo0DV03Ng"
+                              >Animals</a
+                            >
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-
+          </div>
         </div>
-    </div>
-</body>
 
+        <div class="pop-quiz">
+          <div name="POP_QUIZ">
+            <h2 class="pop-name"><u>Pop Quiz</u></h2>
+            <ol>
+              What is the name of the coder of this site?
+            </ol>
+            <ol>
+              <input type="text" id="q1" />
+            </ol>
+
+            <ol>
+              What month was the coder born?
+            </ol>
+            <ol>
+              <input type="text" id="q2" />
+            </ol>
+
+            <ol>
+              Did the coder graduate high school?
+            </ol>
+            <ol>
+              <input type="text" id="q3" />
+            </ol>
+
+            <ol>
+              What is this coder's passion?
+            </ol>
+            <ol>
+              <input type="text" id="q4" />
+            </ol>
+
+            <ol>
+              What does this coder do on their free time?
+            </ol>
+            <ol>
+              <input type="text" id="q5" />
+            </ol>
+
+            <ol>
+              <button onclick="submitQuiz()">Submit</button>
+            </ol>
+
+            <h2 class="numQuiz-name"><u>Fun Quiz</u></h2>
+            <ol>
+              What's my lucky number?
+            </ol>
+            <ol>
+              <input type="text" id="q6" />
+              <ol>
+                <button onclick="submitQ6()">Submit</button>
+              </ol>
+            </ol>
+            <ol>
+              Name an art medium.
+            </ol>
+            <ol>
+              <input type="text" id="q7" />
+              <ol>
+                <button onclick="submitQ7()">Submit</button>
+              </ol>
+            </ol>
+            <ol>
+              Is this user zodiac sign Cancer?
+            </ol>
+            <ol>
+              <input type="text" id="yn1" />
+              <ol>
+                <button onclick="submitYN1()">Submit</button>
+              </ol>
+            </ol>
+            <ol>
+              Did this coder finish Code School yet?
+            </ol>
+            <ol>
+              <input type="text" id="yn2" />
+              <ol>
+                <button onclick="submitYN2()">Submit</button>
+              </ol>
+            </ol>
+            <ol>
+              Did this coder finish college?
+            </ol>
+            <ol>
+              <input type="text" id="yn3" />
+              <ol>
+                <button onclick="submitYN3()">Submit</button>
+              </ol>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
